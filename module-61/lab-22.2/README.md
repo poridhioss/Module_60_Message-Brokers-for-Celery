@@ -4,8 +4,6 @@
 
 This lab keeps the Celery worker alive on the host by using a `systemd` unit with `Restart=always`. The Flask API also runs on the host from a project-local `venv`, and only RabbitMQ stays in a container. You kill the worker, watch `systemd` bring it back up, and inspect the journal for the crash + restart record.
 
-> Looking for the **in-container (`supervisord`)** path instead? See [Lab 22.1](../lab-22.1/README.md).
-
 ## Architecture
 
 <p align="center"><img src="https://raw.githubusercontent.com/mahiiabdullah/Poridhi-Labs/main/module-61/lab-22.2/images/architecture-systemd.svg" alt="Lab 22.2 systemd architecture"></p>
@@ -391,4 +389,4 @@ sudo systemctl daemon-reload
 
 ## Conclusion
 
-You ran a host-side Celery worker under `systemd`, watched `systemd` restart it after a `SIGKILL`, and inspected both the journal and the append-only worker log for the crash + restart record. Pick this path when the worker runs on the host alongside the broker and needs to start on boot; for in-container supervision use [Lab 22.1](../lab-22.1/README.md).
+You ran a host-side Celery worker under `systemd`, watched `systemd` restart it after a `SIGKILL`, and inspected both the journal and the append-only worker log for the crash + restart record. Pick this path when the worker runs on the host alongside the broker and needs to start on boot; for in-container supervision look at the previous lab.
