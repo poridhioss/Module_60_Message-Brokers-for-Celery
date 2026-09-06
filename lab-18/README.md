@@ -19,6 +19,8 @@ Install Flask inside a project-local virtual environment so the dependency stays
 ### Step 1: Create the virtual environment
 
 ```bash
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip python-is-python3
 python -m venv venv
 ```
 
