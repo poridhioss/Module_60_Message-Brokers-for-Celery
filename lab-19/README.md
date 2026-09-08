@@ -279,7 +279,7 @@ Open the `.lb.poridhi.io` URL for port 15672. Login with:
 
 - Username: `guest`
 - Password: `guest`
-
+![](https://raw.githubusercontent.com/mahiiabdullah/Poridhi-Labs/main/lab-19/images/RabbitMQ_Login.png)
 The dashboard shows three sections at the top: Overview, Connections, Channels. The queue view is empty for now.
 
 ![](https://raw.githubusercontent.com/mahiiabdullah/Poridhi-Labs/main/lab-19/images/Step%2013.png)
@@ -318,6 +318,8 @@ The `celery` queue appears with these columns:
 - Messages: `0`
 
 The **D** badge confirms the queue is durable and survives a broker restart.
+![](https://raw.githubusercontent.com/mahiiabdullah/Poridhi-Labs/main/lab-19/images/Queues_tracing.png)
+![](https://raw.githubusercontent.com/mahiiabdullah/Poridhi-Labs/main/lab-19/images/Celery.png)
 
 ## Step 16: Verify durable queues by restarting RabbitMQ
 
