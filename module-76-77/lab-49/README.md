@@ -320,4 +320,4 @@ These volumes survive `docker compose down` and `docker compose up` — they are
 
 ## Next Steps
 
-The next lab changes `docker-compose.yml` to a multi-node setup: a single shared `cluster.name`, distinct `node.roles` per container, and a discovery list using service names so the three containers form one Elasticsearch cluster.
+In the next lab we will changes `docker-compose.yml` to a multi-node setup: a single shared `cluster.name`, distinct `node.roles` per container, and a discovery list using service names so the three containers form one Elasticsearch cluster.
